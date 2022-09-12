@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:TopicID;datatype:int,name:Title;datatype:string,name:Content;datatype:blob,name:Nickname;datatype:string,name:Email;datatype:string,name:Time;datatype:datetime" />
+	<infoitem key="UD_Recordset2" value="name:ID;datatype:int,name:Reply_TopicID;datatype:int,name:Content;datatype:blob,name:Nickname;datatype:string,name:Email;datatype:string,name:Time;datatype:datetime" />
+</info>
