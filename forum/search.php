@@ -72,7 +72,7 @@ function cut200($str){
     <tr align="right">
       <td>搜尋關鍵字
         <label>
-        <input type="text" name="keyword" />
+        <input type="text" name="keyword" required/>
       </label>
         <label>
         <input type="submit" name="Submit" value="送出" />
