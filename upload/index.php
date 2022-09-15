@@ -27,7 +27,7 @@ $totalRows_rs_upload = mysql_num_rows($rs_upload);
       <td width="190"><?php echo $row_rs_upload['UserFilename']; ?></td>
       <td width="50">大小</td>
       <td width="80"><?php echo $row_rs_upload['Size']; ?></td>
-      <td width="106" align="right">下載 | 刪除</td>
+      <td width="106" align="right"><a href="download.php?UserFilename=<?php echo $row_rs_upload['UserFilename']; ?>&amp;ServerFilename=<?php echo $row_rs_upload['ServerFilename']; ?>">下載</a> | <a href="del.php?ID=<?php echo $row_rs_upload['ID']; ?>&amp;ServerFilename=<?php echo $row_rs_upload['ServerFilename']; ?>">刪除</a></td>
     </tr>
     <tr>
       <td>說明：</td>

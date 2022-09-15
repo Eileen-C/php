@@ -48,11 +48,11 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   header(sprintf("Location: %s", $insertGoTo));
 }
 
-echo "檔案名稱：".$_FILES['myfile']['name']."<br />";
+/*echo "檔案名稱：".$_FILES['myfile']['name']."<br />";
 echo "檔案大小：".$_FILES['myfile']['size']."<br />";
 echo "檔案格式：".$_FILES['myfile']['type']."<br />";
 echo "暫存名稱：".$_FILES['myfile']['tmp_name']."<br />";
-echo "錯誤代碼：".$_FILES['myfile']['error']."<br />";
+echo "錯誤代碼：".$_FILES['myfile']['error']."<br />";*/
 
 if($_FILES['myfile']['error'] > 0){
 	switch($_FILES['myfile']['error'])
@@ -97,7 +97,7 @@ move_uploaded_file($_FILES['myfile']['tmp_name'] , $DestDIR . "/" . $ServerFilen
     <tr>
       <td>檔案大小：</td>
       <td><label>
-        <input name="Size" type="text" id="Size" value="<?php echo $_FILES['myfile']['size']; ?>" size="40" />
+        <input name="Size" type="text" id="Size" value="<?php echo $_FILES['myfile']['size']; ?>" size="40" readonly="true" />
         </label>
       </td>
     </tr>
