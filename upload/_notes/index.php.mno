@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_upload" value="name:ID;datatype:int,name:UserFilename;datatype:string,name:ServerFilename;datatype:string,name:Size;datatype:string,name:Comment;datatype:string" />
+</info>
